@@ -1,38 +1,201 @@
+
+
 .App {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+  margin: none;
+}
+
+.Header {
+  background-color: #0D0A1E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  opacity: 95%;
+}
+
+.Header > p {
+  margin-left: 12rem;
+  font-size: 26px;
+  font-weight: bold;
+  color: #ff4040;
+}
+
+.Header > ul {
+  display: flex;
+  margin-right: 4rem;
+  font-size: 18px;
+}
+
+.Header > ul > li {
+  display: flex;
+  margin: 1rem;
+  list-style: none;
+  color: #E4DACF;
+  font-size: 20px;
+}
+
+.Home{
+  display: flex;
+  flex-direction: column;
+}
+
+.textAnchor{
+  margin-bottom: 8rem;
+  color: black;
+}
+
+.titleContainer > h1 {
+  font-size: 48px;
+}
+
+.titleContainer{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.titleContainer > p {
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cardContainer{
+  display: flex;
+  margin-top: 8rem;
+  justify-content: space-evenly;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home--card {
+  max-width: 20rem;
+  min-height: 18rem;
+  padding: 3rem;
+  background-color: #080612;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home--card > img {
+  width: 15rem;
+}
+
+.home--card > p {
+  color: #E4DACF;
+  font-size: 21px;
+}
+
+.Projects {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18rem;
+}
+
+.projectTitle{
+  font-size: 34px;
+  font-weight: bold;
+  color: #ff4040;
+}
+
+.projectTitle:hover{
+  color: #a53131;
+}
+
+.Projects > p {
+  text-decoration: underline;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.projectImage {
+  height: 30rem;
+  width: 45rem;
+  border: 2px solid white;
+}
+
+
+.oddProject{
+  display: flex;
+  margin-top: 5rem;
+}
+
+.oddProject > div {
+  width: 20rem;
+  margin-right: 8rem;
+}
+
+.evenProject{
+  display: flex;
+  margin-top: 5rem;
+}
+
+.evenProject > div {
+  width: 20rem;
+  margin-left: 8rem;
+}
+
+.projectDesc {
+  font-size: 20px;
+}
+
+
+.Contact {
+  text-align: center;
+  margin-top: 5rem;
+  border: 2px solid black;
+}
+
+.Contact > p {
+  text-decoration: underline;
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.Contact > div {
+  display: flex;
+  min-height: 20rem;
+}
+
+.email {
+  background-color: white;
+  color: black;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-size: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.email > p {
+  width: 20rem;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.email > p:last-child {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.moreInfo {
+  background-color: #0D0A1E;
+  color: #E4DACF;
+  min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.moreInfo > a {
+  color: #E4DACF;
+  margin-top: 3rem;
+}
+
+.moreInfo > a:hover {
+  color: #a5a09b;
 }
